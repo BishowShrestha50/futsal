@@ -21,5 +21,5 @@ func main() {
 	db = controller.ConnectDB()
 	server := controller.NewServer(db)
 	controller.MigrateDB(db)
-	http.ListenAndServe(":8000", server.Router)
+	http.ListenAndServe(":8080", server.Router)
 }
